@@ -10,20 +10,26 @@ WebSkills fits into the broader [Agent Skills ecosystem](https://agentskills.io/
 
 ## Quickstart
 
-Install from URL first, then auto-fallback to extraction if needed:
+Install the CLI locally from the repository:
 
 ```bash
-npx webskills add https://example.com/page
+cargo install --path .
+```
+
+Then install from URL first, with auto-fallback to extraction if needed:
+
+```bash
+webskills add https://example.com/page
 ```
 
 Common cases:
 
 ```bash
 # Forward install flags to `skills add`
-npx webskills add https://example.com/page --yes --global --agent claude-code cursor
+webskills add https://example.com/page --yes --global --agent claude-code cursor
 
 # Extract without running any install command
-npx webskills extract --url https://example.com/page --output .webskills/generated
+webskills extract --url https://example.com/page --output .webskills/generated
 ```
 
 ## Why WebSkills?
@@ -123,11 +129,6 @@ Behavior notes:
 - If every stage fails, extraction returns:
   `Unable to fetch any usable source document for extraction pipeline.`
 
-## npm Distribution Reference
-
-`webskills` is published as a cargo-dist-generated npm installer package.
-The npm package installs the prebuilt Rust binary for the current platform from GitHub Releases.
-
 ## Build From Source
 
 Requirements:
@@ -141,7 +142,7 @@ Install the CLI locally from the repository:
 cargo install --path .
 ```
 
-Run Rust CLI directly:
+Run the CLI directly from a source checkout:
 
 ```bash
 cargo run -- add https://example.com/page
