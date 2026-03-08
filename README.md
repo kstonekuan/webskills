@@ -10,26 +10,20 @@ WebSkills fits into the broader [Agent Skills ecosystem](https://agentskills.io/
 
 ## Quickstart
 
-Install the CLI locally from the repository:
+Install from URL first, then auto-fallback to extraction if needed:
 
 ```bash
-cargo install --path .
-```
-
-Then install from URL first, with auto-fallback to extraction if needed:
-
-```bash
-webskills add https://example.com/page
+npx webskills-cli add https://example.com/page
 ```
 
 Common cases:
 
 ```bash
 # Forward install flags to `skills add`
-webskills add https://example.com/page --yes --global --agent claude-code cursor
+npx webskills-cli add https://example.com/page --yes --global --agent claude-code cursor
 
 # Extract without running any install command
-webskills extract --url https://example.com/page --output .webskills/generated
+npx webskills-cli extract --url https://example.com/page --output .webskills/generated
 ```
 
 ## Why WebSkills?
