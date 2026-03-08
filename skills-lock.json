@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "agent": {
+      "source": "agentskills/io",
+      "sourceType": "well-known",
+      "computedHash": "19032671518adedcc0da0437e448f5b8888e4346ee2459c3afaf47b7d83a4742"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "computedHash": "6412eb4eb3b91595ebab937f0c69501240e7ba761b3d82510b5cf506ec5c7adc"
+    }
+  }
+}

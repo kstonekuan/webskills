@@ -1,0 +1,16 @@
+[workspace]
+members = ["cargo:."]
+
+# Config for 'dist'
+[dist]
+cargo-dist-version = "0.31.0"
+ci = "github"
+installers = ["shell", "powershell", "npm"]
+publish-jobs = ["npm"]
+npm-package = "webskills"
+targets = ["aarch64-apple-darwin", "aarch64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-unknown-linux-gnu", "x86_64-unknown-linux-musl", "x86_64-pc-windows-msvc"]
+pr-run-mode = "plan"
+allow-dirty = ["ci"]
+github-attestations = true
+windows-archive = ".zip"
+unix-archive = ".tar.gz"
