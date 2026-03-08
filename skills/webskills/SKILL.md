@@ -1,16 +1,9 @@
 ---
 name: webskills
-description: Convert any public website page into an agent skill with WebSkills and install it for local agents.
+description: Generate and install an agent skill from a public webpage with WebSkills. Use when a user wants to turn a public docs, help, reference, wiki, or spec page into a reusable local skill, preview extracted skill artifacts, or install the generated skill with `npx skills add`.
 ---
 
 # WebSkills
-
-## When to Use
-
-Use this skill when a user wants to:
-- turn any public webpage into a reusable agent skill
-- install that generated skill for their coding agent
-- avoid manual `SKILL.md` authoring for website-based guidance
 
 ## Inputs Required
 

@@ -1,12 +1,12 @@
 # WebSkills
 
-WebSkills turns a single public webpage into an installable agent skill.
+WebSkills turns any webpage into an agent skill.
 
-WebSkills first tries native `skills add` installation from a URL. If the site does not already expose an agent-ready surface, it falls back to deterministic single-page extraction and installs the generated skill locally.
+WebSkills first tries native `npx skills add` installation from a URL. If the site does not already expose an agent-ready surface, it falls back to deterministic single-page extraction and installs the generated skill locally.
 
 It is built for pages that are useful to agents but are not yet packaged as skills: docs pages, wiki/reference pages, help centers, specs, and technical articles.
 
-The broader Agent Skills ecosystem includes the open Agent Skills format, the `skills.sh` install flow (`npx skills add ...`), and sites that already publish agent-friendly surfaces such as `skill.md`, `/.well-known/skills/`, `llms.txt`, MCP endpoints, or markdown negotiation. WebSkills exists to close the gap for websites that do not.
+WebSkills fits into the broader [Agent Skills ecosystem](https://agentskills.io/) by packaging pages that are not already exposed through surfaces like `skill.md`, `/.well-known/skills/`, `llms.txt`, MCP endpoints, or markdown negotiation.
 
 ## Quickstart
 
