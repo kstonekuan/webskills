@@ -16,7 +16,7 @@ description: Generate and install an agent skill from a public webpage with WebS
 1. Generate and install in one command:
 
 ```bash
-npx webskills add <site-url>
+npx webskills-cli add <site-url>
 ```
 
 2. Confirm success output includes:
@@ -31,7 +31,7 @@ npx webskills add <site-url>
 Use this when the user wants to inspect output before installing:
 
 ```bash
-npx webskills extract --url <site-url> --output .webskills/generated
+npx webskills-cli extract --url <site-url> --output .webskills/generated
 ```
 
 Then inspect generated files:
@@ -50,19 +50,19 @@ npx skills add <generated-skill-directory>
 - Set custom output directory:
 
 ```bash
-npx webskills add <site-url> --output <dir>
+npx webskills-cli add <site-url> --output <dir>
 ```
 
 - Set custom skill slug:
 
 ```bash
-npx webskills add <site-url> --name <skill-name>
+npx webskills-cli add <site-url> --name <skill-name>
 ```
 
 - Increase fetch timeout:
 
 ```bash
-npx webskills add <site-url> --timeout-ms 30000
+npx webskills-cli add <site-url> --timeout-ms 30000
 ```
 
 ## Agent Behavior Rules
@@ -76,4 +76,4 @@ npx webskills add <site-url> --timeout-ms 30000
 
 - If HTTPS certificate validation fails in restricted environments, retry with another reachable public URL.
 - If installation is not desired, use `extract` instead of `add`.
-- If `npx webskills` is unavailable, run `cargo run -- add <site-url>` from a source checkout or install the published npm package first.
+- If `npx webskills-cli` is unavailable, run `cargo run -- add <site-url>` from a source checkout or install the published npm package first.
